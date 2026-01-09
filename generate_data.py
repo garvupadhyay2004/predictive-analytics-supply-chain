@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-# 1. Create date range (2 years of daily data)
+# 1. Created date range (2 years of data)
 dates = pd.date_range(start="2023-01-01", end="2024-12-31")
 
 # 2. Warehouses and regions
