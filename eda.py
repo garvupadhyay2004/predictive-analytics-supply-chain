@@ -21,7 +21,7 @@ plt.title("Average Orders by Region")
 plt.ylabel("Orders")
 plt.xlabel("Region")
 
-plt.savefig("average_orders_by_region.png")  # 👈 saves image
+plt.savefig("average_orders_by_region.png")  #  saving image
 plt.close()
 
 
