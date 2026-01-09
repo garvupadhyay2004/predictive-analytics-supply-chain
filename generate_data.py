@@ -1,23 +1,23 @@
 import pandas as pd
 import numpy as np
 
-# 1. Created date range (2 years of data)
+# date range craeted (2 years of daily data)
 dates = pd.date_range(start="2023-01-01", end="2024-12-31")
 
-# 2. Warehouses and regions
+# For Warehouses and regions
 warehouses = ["WH_1", "WH_2", "WH_3"]
 regions = ["North", "South", "East", "West"]
 
 data = []
 
-# 3. Generate data
+# To Generate data
 for date in dates:
     for wh in warehouses:
         region = np.random.choice(regions)
 
         base_orders = np.random.randint(80, 150)
 
-        # Seasonal effect (higher demand in Oct–Dec)
+        # Increase in demand due to festive season (Due to higher demand in Oct–Dec)
         if date.month in [10, 11, 12]:
             base_orders += np.random.randint(30, 60)
 
@@ -36,7 +36,7 @@ for date in dates:
             scanner_used, processing_time
         ])
 
-# 4. Create DataFrame
+# Create DataFrame
 columns = [
     "date", "warehouse_id", "region", "orders",
     "shipment_weight", "workers",
@@ -45,7 +45,7 @@ columns = [
 
 df = pd.DataFrame(data, columns=columns)
 
-# 5. Save to CSV
+# Save to CSV
 df.to_csv("logistics_data.csv", index=False)
 
 print("Synthetic logistics data generated successfully!")
