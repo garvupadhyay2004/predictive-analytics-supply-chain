@@ -103,7 +103,7 @@ Feature importance from the Random Forest model was used to explain which factor
 ##  How to Run the Project
 
 1. Clone the repository:
-git clone https://github.com/YOUR_USERNAME/predictive-analytics-supply-chain.git
+git clone https://github.com/garvupadhyay2004/predictive-analytics-supply-chain.git
 
 2. Install required dependencies:
 pip install pandas numpy matplotlib scikit-learn
