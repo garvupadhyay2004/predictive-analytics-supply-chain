@@ -90,7 +90,7 @@ feature_importance = pd.DataFrame({
     "Importance": rf_model.feature_importances_
 })
 
-# Sort by importance
+# Sort by importance (i've given importance to months & shipment weight as everything depends on orders)
 feature_importance = feature_importance.sort_values(
     by="Importance", ascending=False
 )
