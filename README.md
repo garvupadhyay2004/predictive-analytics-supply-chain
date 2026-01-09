@@ -108,9 +108,9 @@ git clone https://github.com/YOUR_USERNAME/predictive-analytics-supply-chain.git
 2. Install required dependencies:
 pip install pandas numpy matplotlib scikit-learn
 
-3. Run the project scripts in order:
-python generate_data.py
-python eda.py
+3. Run the project scripts in order:--
+python generate_data.py-->
+python eda.py-->
 python ml_model.py
 
 
